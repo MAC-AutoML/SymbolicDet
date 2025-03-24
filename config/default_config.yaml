@@ -1,0 +1,41 @@
+gp:
+  num_generations: 500
+  population_size: 50
+  max_tree_height: 7
+  select_tour_size: 4
+  hof_max_size: 10
+  crossover_prob: 0.5
+  mutation_prob: 0.3
+  generation_step: 40
+
+data:
+  tt_ratio: 0.2
+  search_scale: 200
+  labels: []
+  opt_expr_list: null
+
+paths:
+  output_base_dir: "output/"
+  _output_dir: "sr_generation_special/"
+  _metric_save_path: "a_4metric_result/"
+
+is_rearrange_result: false
+debug: false
+
+llm:
+  enable_llm: true
+  interaction_interval: 20
+  max_retries: 3
+  top_k_individuals: 5  # The number of optimal individuals to send to LLM
+  response_timeout: 60.0
+
+tasks:
+  default_thresholds: [0.01, 0.03, 0.05, 0.07, 0.09, 0.11, 0.13, 0.15, 0.17, 0.19]
+  task_list:
+    - path: "./data/finetune_20250219_1301_0.03_ddp/Fishing"
+      prior_expressions: []
+      thresholds: []
+    # You can add more tasks
+    # - path: "/path/to/another/task"
+    #   prior_expressions: ["gt(boat, 5)", "lt(fishing_net, 3)"]
+    #   thresholds: [0.1, 0.2, 0.3]

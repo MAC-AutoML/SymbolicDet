@@ -1,0 +1,7 @@
+# filefolder
+__pycache__/
+temp/
+output/
+
+# file
+output.txt
