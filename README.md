@@ -56,7 +56,7 @@ export SR_API_KEY="your_api_key"
 If you find our paper and code useful in your research, please consider giving a star ⭐ and citation 📝:
 
 ```
-@misc{zeng2025trainingfreeanomalyeventdetection,
+@misc{zeng2025objectseventsunlockingcomplex,
       title={From Objects to Events: Unlocking Complex Visual Understanding in Object Detectors via LLM-guided Symbolic Reasoning}, 
       author={Yuhui Zeng and Haoxiang Wu and Wenjie Nie and Xiawu Zheng and Guangyao Chen and Yunhang Shen and Jun Peng and Yonghong Tian and Rongrong Ji},
       year={2025},
